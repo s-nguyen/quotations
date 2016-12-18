@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- By Stephen Nguyen -->
+    <meta charset="UTF-8">
+    <title>Quotations Enhanced</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h3>Register</h3>
+    <div class='register'>
+        <form action="controller.php" method="post">
+            <label>Username</label><input id="userbox" type='text' name='username' pattern=".{4,}"  title="4 character minimum" required/><br>
+            <label>Password</label><input id="passbox" type='password' name='password' pattern=".{6,}" title="6 character minimum" required/><br><br>
+            <button name='register' value='register'>Register</button>
+        </form>
+        <?php
+            session_start();
+            if($_SESSION['invalid']){ ?>
+                <p>Username already taken</p>
+            <?php } ?>
+
+
+    </div>
+
+</body>
+</html>

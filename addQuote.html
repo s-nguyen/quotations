@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- By Stephen Nguyen -->
+    <meta charset="UTF-8">
+    <title>Quotations Enhanced</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<h3>Add a Quote</h3>
+<div class='addQuote'>
+	<form action="controller.php" method="post">
+		<span class="labels">&nbsp;Quote:&nbsp;</span><textarea name="quote" cols="60" rows="5" placeholder="Enter new quote" required></textarea>
+	    <p></p>
+		<span class="labels">Author:&nbsp;</span><input type="text" name="author" placeholder="Author" required>
+	    <p></p>
+		<span class="labels"></span><input type="submit"  name="submit" value="Add Quote">
+	</form>
+</div>
+
+</body>
+</html>
